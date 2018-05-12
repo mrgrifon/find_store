@@ -2,10 +2,10 @@
 
 The application is build with python3.6, but it should work all python 3 version
 
-docopt==0.6.2
-pandas==0.22.0
-requests==2.18.4
-urllib3==1.22
+- docopt==0.6.2
+- pandas==0.22.0
+- requests==2.18.4
+- urllib3==1.22
 
 # Details
 
@@ -48,6 +48,8 @@ Examples:
 ```
 
 # About project
+
+```
 .
 ├── find_store -> find_store.py     - symlink to main app
 ├── find_store.py                   - main app
@@ -55,6 +57,7 @@ Examples:
 ├── requirements.txt                - dependacies for the project
 ├── store-locations.csv             - data file
 └── tests.py                        - unit tests
+```
 
 Application does two things:
 1. Find coordinates based on address or zipcode.
