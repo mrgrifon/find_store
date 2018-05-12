@@ -1,6 +1,6 @@
 # Requirements
 
-The application is build with python3.6, but it should work all python 3 version
+The application is build with python3.6, but it should work with all python3 version
 
 - docopt==0.6.2
 - pandas==0.22.0
@@ -9,7 +9,7 @@ The application is build with python3.6, but it should work all python 3 version
 
 # Details
 
-Command-line application that find closes store for specified address
+Command-line application that find closest store for specified address
 
 ```
 Find Store
@@ -19,9 +19,9 @@ Find Store
 
 Usage:
   find_store --address="<address>"
-  find_store --address="<address>" [--units=(mi|km)] [--output=text|json]
+  find_store --address="<address>" [--units=(mi|km)] [--output=(text|json)]
   find_store --zip=<zip>
-  find_store --zip=<zip> [--units=(mi|km)] [--output=text|json]
+  find_store --zip=<zip> [--units=(mi|km)] [--output=(text|json)]
 
 Options:
   --zip=<zip>          Find nearest store to this zip code. If there are multiple best-matches, return the first.
@@ -32,7 +32,7 @@ Options:
 
 # How to use
 
-First install all dependancies.
+First, install all dependancies.
 
 ```
 pip install -r requirements.txt
@@ -64,7 +64,7 @@ Application does two things:
 2. Calculate distance for each store, sort and select closest store
 
 Google Geocode API is used to get coordinates.
-Set `API_KEY` into env to avoid problems with quota API limit. (optional)
+Set `API_KEY` into env to avoid problems with API quota limit. (optional)
 
 Pandas library is used to manipulate data from csv file.
 Distance is calculated with Haversine formula.
@@ -73,4 +73,3 @@ Tests (unit tests) are located in tests.py, that basically check:
 - function find_coordinate
 - existence of csv file
 - app external call
-
